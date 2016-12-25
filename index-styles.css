@@ -1,6 +1,13 @@
 body { 
     background-image: url('Assets/background.png');
     padding: 30px;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 .placeholder {
