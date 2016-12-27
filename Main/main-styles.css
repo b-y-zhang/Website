@@ -1,7 +1,15 @@
+body.main-fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 body { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Assets/main-background.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../Assets/main-background.jpg');
     background-size: cover;
     padding: 30px;
+    opacity: 1;
+    transition: 2s opacity;
 }
 
 .placeholder {
