@@ -21,20 +21,30 @@
 </head>
 
 <body>
-    <div class="placeholder">
-        <div class="welcome-text">
-            <p>Bob Zhang</p>
-        </div>
-        <div class="return-text">
-            <p><a href="../index.html">Return to Welcome Page</a></p>
+    <div id="loader">
+            <img src="../Assets/gears.gif">
+    </div>
+    
+    <div id="main-page">
+        <div class="placeholder">
+            <div class="welcome-text">
+                <p>Bob Zhang</p>
+            </div>
+            <div class="return-text">
+                <p><a href="../index.html">Return to Welcome Page</a></p>
+            </div>
         </div>
     </div>
     
-    <script>document.body.className += 'main-fade-out';</script>
-    <script> 
-        $(function() {
-            $('body').removeClass('main-fade-out');
-        });
+    <script>
+        // loading screen
+        document.getElementById('main-page').className += 'main-fade-out'; 
+        // animate fade-in from loading screen
+        setTimeout(function() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main-page").style.display = "block";
+            document.getElementById('main-page').classList = '';
+        }, 3000);
     </script>
 </body>
 

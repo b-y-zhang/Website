@@ -1,18 +1,32 @@
-body.main-fade-out {
+#main-page.main-fade-out {
     opacity: 0;
     transition: none;
 }
 
-body { 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 74px;
+    height: 74px;
+    margin: -37px 0 0 -37px;
+}
+
+#main-page { 
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
         url('../Assets/main-background.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 30px;
     opacity: 1;
     transition: 2s opacity;
+    min-height: 100%;
 }
 
 .placeholder {
