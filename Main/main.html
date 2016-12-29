@@ -26,12 +26,24 @@
     </div>
     
     <div id="main-page">
-        <div class="placeholder">
-            <div class="welcome-text">
-                <p>Bob Zhang</p>
+        <div id="navbar">
+            <ul>
+                <li><a onClick="change(); return false;" href="main.html">Test</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <div class="placeholder" id="placeholder">
+                <div class="welcome-text">
+                    <p>Bob Zhang</p>
+                </div>
+                <div class="return-text">
+                    <p><a href="../index.html">Return to Welcome Page</a></p>
+                </div>
             </div>
-            <div class="return-text">
-                <p><a href="../index.html">Return to Welcome Page</a></p>
+            
+            <div id="welcome">
+                <p>Welcome</p>
             </div>
         </div>
     </div>
@@ -43,8 +55,14 @@
         setTimeout(function() {
             document.getElementById("loader").style.display = "none";
             document.getElementById("main-page").style.display = "block";
-            document.getElementById('main-page').classList = '';
+            document.getElementById("main-page").classList = '';
         }, 3000);
+        
+        function change() {
+            document.getElementById("placeholder").style.display = "none";
+            $('#welcome').fadeIn();
+            return;
+        }
     </script>
 </body>
 

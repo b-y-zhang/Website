@@ -38,6 +38,17 @@ html, body {
     transform: translate(0%, -50%);
 }
 
+#welcome {
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 74px;
+    height: 74px;
+    margin: -37px 0 0 -37px;
+}
+
 .welcome-text {
     font-size: 25px; 
     text-align: center;
