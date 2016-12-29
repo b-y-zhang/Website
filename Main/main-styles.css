@@ -8,6 +8,10 @@ html, body {
     margin: 0;
 }
 
+ul {
+    margin: 0px;
+}
+
 #loader {
     position: absolute;
     left: 50%;
