@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="main-styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript">google.load("jquery", "1.3.2");</script>
     <title>Bob Zhang</title>
     
@@ -28,7 +28,10 @@
     <div id="main-page">
         <div id="navbar">
             <ul>
-                <li><a onClick="change(); return false;" href="main.html">Test</a></li>
+                <li><a onClick="change(); return false;" href="main.html" id="Link1">Test1</a></li>
+                <li><a onClick="change(); return false;" href="main.html">Test2</a></li>
+                <li><a onClick="change(); return false;" href="main.html">Test3</a></li>
+                <li><a onClick="change(); return false;" href="main.html">Test4</a></li>
             </ul>
         </div>
         
@@ -47,23 +50,7 @@
             </div>
         </div>
     </div>
-    
-    <script>
-        // loading screen
-        document.getElementById('main-page').className += 'main-fade-out'; 
-        // animate fade-in from loading screen
-        setTimeout(function() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("main-page").style.display = "block";
-            document.getElementById("main-page").className = "";
-        }, 3000);
-        
-        function change() {
-            document.getElementById("placeholder").style.display = "none";
-            $('#welcome').fadeIn();
-            return;
-        }
-    </script>
+    <script type="text/javascript" src="scripts.js" ></script>
 </body>
 
 </html>
