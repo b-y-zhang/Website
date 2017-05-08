@@ -28,15 +28,15 @@
     <div id="main-page">
         <div id="navbar">
             <ul>
-                <li><a onClick="change(); return false;" href="main.html" id="Link1">Test1</a></li>
-                <li><a onClick="change(); return false;" href="main.html">Test2</a></li>
-                <li><a onClick="change(); return false;" href="main.html">Test3</a></li>
-                <li><a onClick="change(); return false;" href="main.html">Test4</a></li>
+                <li><a onClick="change('home'); return false;" href="main.html" id="homenavbar">Home</a></li>
+                <li><a onClick="change('professional'); return false;" href="main.html" id="professionalnavbar">Professional</a></li>
+                <li><a onClick="change('personal'); return false;" href="main.html" id="personalnavbar">Personal</a></li>
+                <li><a onClick="change('resources'); return false;" href="main.html" id="resourcesnavbar">Resources</a></li>
             </ul>
         </div>
         
         <div id="content">
-            <div class="placeholder" id="placeholder">
+            <div class="placeholder" id="home">
                 <div class="welcome-text">
                     <p>Bob Zhang</p>
                 </div>
@@ -45,8 +45,16 @@
                 </div>
             </div>
             
-            <div id="welcome">
-                <p>Welcome</p>
+            <div id="professional">
+                <p>Professional</p>
+            </div>
+            
+            <div id="personal">
+                <p>Personal</p>
+            </div>
+            
+            <div id="resources">
+                <p>Resources</p>
             </div>
         </div>
     </div>

@@ -39,7 +39,29 @@ html, body {
     transform: translate(0%, -50%);
 }
 
-#welcome {
+#professional {
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 74px;
+    height: 74px;
+    margin: -37px 0 0 -37px;
+}
+
+#personal {
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 74px;
+    height: 74px;
+    margin: -37px 0 0 -37px;
+}
+
+#resources {
     background-color: white;
     display: none;
     position: absolute;
@@ -96,7 +118,7 @@ html, body {
 }
 
 #navbar li a:hover {
-    font-size: 30px;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.25);
     text-decoration: none;
 }
 

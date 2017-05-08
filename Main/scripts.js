@@ -11,9 +11,21 @@ setTimeout(function() {
     document.getElementById("main-page").style.display = "block";
 }, 2950);
 
-function change() {
-    document.getElementById("placeholder").style.display = "none";
-    document.getElementById("Link1").className += " active";
-    $('#welcome').fadeIn();
+document.getElementById("homenavbar").className += " active";
+document.active = "home";
+
+function change(changeTo) {
+    var currentActive = document.getElementById(document.active + "navbar");
+    currentActive.className = "";
+
+    removeDisplay(document.active);
+    
+    document.getElementById(changeTo + "navbar").className += " active";
+    $('#' + changeTo).fadeIn();
+    document.active = changeTo;
     return;
+}
+
+function removeDisplay(id) {
+    document.getElementById(id).style.display = "none";
 }
