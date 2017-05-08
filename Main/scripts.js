@@ -15,17 +15,20 @@ document.getElementById("homenavbar").className += " active";
 document.active = "home";
 
 function change(changeTo) {
+    // Disable active navbar
     var currentActive = document.getElementById(document.active + "navbar");
     currentActive.className = "";
-
-    removeDisplay(document.active);
     
+    // Disable current page 
+    document.getElementById(document.active).style.display = "none";
+    
+    // Update active navbar
     document.getElementById(changeTo + "navbar").className += " active";
+    
+    // Update current page
     $('#' + changeTo).fadeIn();
+    
+    // Update context
     document.active = changeTo;
     return;
-}
-
-function removeDisplay(id) {
-    document.getElementById(id).style.display = "none";
 }
